@@ -1,6 +1,6 @@
 #include <Servo.h>
 
-Servo servomotor;
+Servo servoMotor;
 
 void setup() {
   servoMotor.attach(9);
