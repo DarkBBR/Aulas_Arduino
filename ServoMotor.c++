@@ -1,16 +1,16 @@
 #include <Servo.h>
+int pos = 0; // int Para definir a porta
+int pot = A0;
 
-Servo servoMotor;
+Servo ServoMotor; // Definição do nome do servo para ServoMotor
 
 void setup() {
-  servoMotor.attach(9);
+  ServoMotor.attach(9); // Definição da porta
 }
 
 void loop() {
-  servoMotor.write(0);
-  delay(1000);
-  servoMotor.write(90);
-  delay(1000);
-  servoMotor.write(180);
-  delay(1000);
+   pos = analogRead(pot); // Pegar a variavel do Potenciometro
+   pos = map(0, 1023, 0, 179); // Definição do analogico para o servo
+   ServoMotor.write(pos); 
+   delay(100); // Delay do programa
 }
