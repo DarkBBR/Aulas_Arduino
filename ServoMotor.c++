@@ -1,5 +1,7 @@
 #include <Servo.h>
 int pos = 0; // int Para definir a porta
+int pos1 = 0; // int Para definir a porta
+int pos2 = 0; // int Para definir a porta
 int pot = A0;
 int pot1 = A1;
 int pot2 = A2;
@@ -21,8 +23,8 @@ void loop() {
    pos = map(pos, 0, 1023, 0, 179); // Definição do analogico para o servo
    ServoMotor.write(pos); 
    delay(100); // Delay do programa
-   ServoMotor1.write(pos); 
+   ServoMotor1.write(pos1); 
    delay(400); // Delay do programa
-   ServoMotor2.write(pos); 
+   ServoMotor2.write(pos2); 
    delay(900); // Delay do programa
 }
