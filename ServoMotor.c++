@@ -5,11 +5,13 @@ int pot1 = A1;
 int pot2 = A2;
 
 Servo ServoMotor; // Definição do nome do servo para ServoMotor
+Servo ServoMotor1; // Definição do nome do servo para ServoMotor
+Servo ServoMotor2; // Definição do nome do servo para ServoMotor
 
 void setup() {
   ServoMotor.attach(9); // Definição da porta
-  ServoMotor.attach(10);
-  ServoMotor.attach(11);
+  ServoMotor1.attach(10);
+  ServoMotor2.attach(11);
 }
 
 void loop() {
@@ -19,8 +21,8 @@ void loop() {
    pos = map(pos, 0, 1023, 0, 179); // Definição do analogico para o servo
    ServoMotor.write(pos); 
    delay(100); // Delay do programa
-   ServoMotor.write(pos); 
+   ServoMotor1.write(pos); 
    delay(100); // Delay do programa
-   ServoMotor.write(pos); 
+   ServoMotor2.write(pos); 
    delay(100); // Delay do programa
 }
