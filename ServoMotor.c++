@@ -19,4 +19,8 @@ void loop() {
    pos = map(pos, 0, 1023, 0, 179); // Definição do analogico para o servo
    ServoMotor.write(pos); 
    delay(100); // Delay do programa
+   ServoMotor.write(pos); 
+   delay(100); // Delay do programa
+   ServoMotor.write(pos); 
+   delay(100); // Delay do programa
 }
