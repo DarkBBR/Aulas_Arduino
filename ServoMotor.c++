@@ -1,7 +1,7 @@
 #include <Servo.h>
 int pos = 0; // int Para definir a porta
-int pos1 = 0; // int Para definir a porta
-int pos2 = 0; // int Para definir a porta
+int pos1 = 1; // int Para definir a porta
+int pos2 = 2; // int Para definir a porta
 int pot = A0;
 int pot1 = A1;
 int pot2 = A2;
