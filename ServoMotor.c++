@@ -10,7 +10,7 @@ void setup() {
 
 void loop() {
    pos = analogRead(pot); // Pegar a variavel do Potenciometro
-   pos = map(0, 1023, 0, 179); // Definição do analogico para o servo
+   pos = map(pos, 0, 1023, 0, 179); // Definição do analogico para o servo
    ServoMotor.write(pos); 
    delay(100); // Delay do programa
 }
