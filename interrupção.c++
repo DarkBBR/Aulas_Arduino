@@ -12,7 +12,7 @@ void loop() {
 }
 
 void blink() {
-  if (state == 1) {
+  if (state == state1) {
     state = !state1;
   } else {
     state = state1;
