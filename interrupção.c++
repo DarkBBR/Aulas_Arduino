@@ -1,6 +1,6 @@
 #define pinoLed 13
 volatitle int state = LOW;
-volatitle int state 1 = LOW;
+volatitle int state1 = LOW;
 
 void setup () {
   pinMode(pinoLed, OUTPUT);
@@ -13,8 +13,8 @@ void loop() {
 
 void blink() {
   if (state == 1) {
-    state = !state 1;
+    state = !state1;
   } else {
-    state = state 1;
+    state = state1;
   }
 }
