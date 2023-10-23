@@ -1,6 +1,6 @@
 #define pinoLed 13
-volatitle int state = LOW;
-volatitle int state1 = LOW;
+volatile int state = LOW;
+volatile int state1 = LOW;
 
 void setup () {
   pinMode(pinoLed, OUTPUT);
