@@ -3,12 +3,13 @@ byte seven_seg_digits[4][7] = {
 {1,1,1,1,1,1,0},
 {1,0,0,1,1,1,0},
 {1,1,1,1,1,1,0},
-}
+};
 
 void sevenSegWrite(byte digit) {
   byte pin = 2;
-  for (byte seCount = 0; segCount < 7; ++segCount) {
-    digitWrite(pin, seven_seg_digits[digit](segCount));
+  for (byte segCount = 0; segCount < 7; ++segCount) 
+  {
+    digitalWrite(pin, seven_seg_digits[digit][segCount]);
     ++pin;
   }
   delay(5);
@@ -38,5 +39,5 @@ void loop() {
     digitalWrite(x, LOW);
     delay(3);
   }
-  delay(5;)
+  delay(5);
 }
